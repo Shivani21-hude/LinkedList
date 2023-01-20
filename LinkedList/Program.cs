@@ -18,6 +18,8 @@ namespace LinkedList
             list.Display();
             list.RemoveLastNode();
             list.Display();
+            list.Search(30);
+
         }
     }
 }

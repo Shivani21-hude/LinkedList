@@ -84,6 +84,21 @@ namespace LinkedList
             return head;
         }
 
+        internal void Search(int value)
+        {
+            Node temp = this.head;
+            while (temp != null)
+            {
+                if (temp.data == value)
+                {
+                    Console.WriteLine("\n Given value: " + value + " is present in Linked list");
+                    return;
+                }
+                temp = temp.next;
+            }
+            if (temp == null)
+                Console.WriteLine("\n Given value: " + value + " is not present in Linked list");
+        }
 
         internal void Display()
         {
