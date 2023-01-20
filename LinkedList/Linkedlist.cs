@@ -63,9 +63,25 @@ namespace LinkedList
             if (this.head == null)
                 return null;
             this.head = this.head.next;
-            Console.WriteLine("\n Remove first node from the list");
+            Console.WriteLine("\n After Removing first node from the list");
             return this.head;
 
+        }
+
+        internal Node RemoveLastNode()
+        {
+            Console.WriteLine("\n After delete Last node");
+            if (head == null)
+                return null;
+            if (head.next == null)
+                return null;
+            Node newNode = head;
+            while (newNode.next.next != null)
+            {
+                newNode = newNode.next;
+            }
+            newNode.next = null;
+            return head;
         }
 
 
