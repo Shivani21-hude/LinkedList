@@ -19,6 +19,8 @@ namespace LinkedList
             list.RemoveLastNode();
             list.Display();
             list.Search(30);
+            list.InsertAtParticularPosition(3, 40);
+            list.Display();
 
         }
     }

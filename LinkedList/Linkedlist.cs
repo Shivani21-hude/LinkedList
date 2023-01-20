@@ -46,7 +46,7 @@ namespace LinkedList
                         Node node = new Node(data);
                         node.next = temp.next;
                         temp.next = node;
-                        Console.WriteLine("\n {0} is inserted into linked list at position {1}",data,position);
+                        Console.WriteLine("\n{0} is inserted into linked list",data);
                         break;
                     }
 
