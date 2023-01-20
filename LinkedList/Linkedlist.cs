@@ -58,6 +58,16 @@ namespace LinkedList
             return head;
         }
 
+        internal Node RemoveFirstNode()
+        {
+            if (this.head == null)
+                return null;
+            this.head = this.head.next;
+            Console.WriteLine("\n Remove first node from the list");
+            return this.head;
+
+        }
+
 
         internal void Display()
         {
